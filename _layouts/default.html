@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
+
+
+    {% seo %}
+
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#top"><img src="/images/st/logo_wide.png" height="40" alt="{{ site.title }} logo"></a>
+            <a href="#top" class="logo-link"></a>
+            <button type="button" class="open-nav" id="open-nav"></button>
+        </h1>
+
+        <form action="/search" method="get">
+            <input type="text" name="q" id="search-input" placeholder="Search">
+            <input type="submit" value="Search" style="display: none;">
+        </form>
+
+        {% include sidebar.html %}
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    </header>
+
+
+    <div class="main" id="top">
+        <div class="hero">
+            <h1 class="hero__h1">{{site.data.const.names.portal_name}} {% if page.section %} - {{ page.section }}{% endif %}</h1>
+
+        </div>
+        {{ content }}
+    </div>
+
+    <script>
+        document.getElementById("open-nav").addEventListener("click", function () {
+            document.body.classList.toggle("nav-open");
+        });
+    </script>
+
+    <script src="/js/adjust.js"></script>
+</body>
+</html>
+

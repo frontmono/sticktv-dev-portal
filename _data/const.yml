@@ -1,0 +1,5 @@
+names:
+  service: "Stick TV"
+  portal_name: "Stick TV Developer Portal"
+url:
+  github: "https://github.com/frontmono/sticktv-dev-portal"

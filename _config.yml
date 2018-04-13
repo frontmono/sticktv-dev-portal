@@ -1,0 +1,65 @@
+# ----
+# Site
+
+title: Stick TV Developer
+description: Stick TV Documentation.
+url: https://doc.developer.stick.tv
+google_analytics_key:
+permalink: /:categories/:title.html
+
+
+
+collections:
+  post_intro:
+    title: Introduction
+    id: post_intro
+    position: 1
+    output: true
+  post_overview:
+    title: Overview
+    id: post_overview
+    position: 2
+    output: true
+  post_json_api:
+    title: Service API
+    id: post_json_api
+    position: 3
+    output: true
+  quickstart:
+    title: Quickstart
+    id: quickstart
+    position: 4
+    output: true
+  sub-json-api:
+    title: JSON APIs
+    id: sub-json-api
+    position: 5
+    output: true
+
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+  - vendor
+  - Makefile
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+types:
+  - get
+  - put
+  - delete
+  - post
+
+kramdown:
+  auto_ids: true
+

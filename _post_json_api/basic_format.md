@@ -3,4 +3,10 @@ title: JSON API Basic Format
 position: 1
 ---
 
-**TODO**
+**URL**:
+https://{*server domain*}/api/{*version*}/{*service name*}
+
+
+**Result**
+
+TODO

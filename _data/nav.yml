@@ -22,4 +22,6 @@ toc:
         url: "#post-json-api-basic-format"
       - title: "Account"
         url: sub-json-api/account.html
+      - title: "Content"
+        url: sub-json-api/content.html
 

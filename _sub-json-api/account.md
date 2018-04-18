@@ -8,21 +8,27 @@ layout: full-page
 
 
 # service-login
-+ **uri:**  */gr_login*
-+ **method:** GET
++ **uri:**  *https://{domain}/api/{version}/gr_login*
++ **method:** GET or POST 
 + **parameters**
 
 >
-|name|required|desc|
+|name|required|node|
 |---|---|-|
-|jver|YES|api version|
 |gr_nm|YES|app group name|
 |gr_key|YES|service key|
 
 + **example**
 
-> http://api.stick.tv/gr_login?jver=2&gr_nm=singlab&gr_key=f7d2d2599d49dd6c755a62314185d98b
+> https://dev.api.stick.tv/api/1.0.0/gr_login?gr_nm=stick_developer&gr_key=a5204a2e9f78f8b5ab85b0d510b506e6
+
++ **version history**
+
+> 
+|version|node|
+|---|---|
+|1.0.0|draft|
+
 
 -
-
 

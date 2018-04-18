@@ -4,9 +4,15 @@ position: 1
 right_code: |
     **Service Login**
     ``` 
-    http://api.stick.tv/gr_login?jver=2&gr_nm=singlab&gr_key=f7d2d2599d49dd6c755a62314185d98b
+    https://dev.api.stick.tv/api/1.0.0/gr_login?gr_nm=stick_developer&gr_key=a5204a2e9f78f8b5ab85b0d510b506e6
     ``` 
     
+    
+    **Service Login**
+    ``` 
+    http://dev.api.stick.tv/api/1.0.0/gr_content_list?page=1&count=3
+    ``` 
+        
 ---
 
 Applications that interface directly with the **{{site.data.const.names.service}}** will need interact with RESTful API.
@@ -19,13 +25,15 @@ Applications that interface directly with the **{{site.data.const.names.service}
 |api.dev.stick.tv|Test Server|
 
 ##### Service Login API
-+ **uri:**  gr_login
++ **uri:**  https://{domain}/api/{version}/gr_login
 + **param(GET)**
-    + **jver:** api version
-    + **gr_nm:** app group name
-    + **gr_key:** service key
+    + **gr_nm**(require): app group name
+    + **gr_key**(require): service key
     
 
 ##### Content List API
-*TODO*
++ **uri:**  https://{domain}/api/{version}/gr_content_list
++ **param(GET)**
+    + **page**(optional): result paging. start from 1
+    + **gr_key**(optional): once result count. (1 - 200)
 

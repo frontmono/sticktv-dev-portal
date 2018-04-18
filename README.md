@@ -25,8 +25,8 @@ Optionally, when running `jekyll` commands through Bundler, append `--host x.x.x
 ~~~bash
 $ bundle exec jekyll serve --host x.x.x.x
 ~~~
-~~~bash
-http://x.x.x.x:4000
+~~~make
+make 
 ~~~
 
 

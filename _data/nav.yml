@@ -24,4 +24,6 @@ toc:
         url: sub-json-api/account.html
       - title: "Content"
         url: sub-json-api/content.html
+      - title: "Error Code"
+        url: sub-json-api/error.html
 

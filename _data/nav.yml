@@ -22,6 +22,8 @@ toc:
         url: "#post-json-api-basic-format"
       - title: "Account"
         url: sub-json-api/account.html
+      - title: "Tribe-Fandom"
+        url: sub-json-api/fandom.html
       - title: "Content"
         url: sub-json-api/content.html
       - title: "Error Code"

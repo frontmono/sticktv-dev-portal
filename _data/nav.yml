@@ -26,6 +26,12 @@ toc:
         url: sub-json-api/fandom.html
       - title: "Content"
         url: sub-json-api/content.html
+      - title: "Social API"
+        url: sub-json-api/social-api.html
+      - title: "Upload"
+        url: sub-json-api/upload.html
+      - title: "Donation"
+        url: sub-json-api/donation.html
       - title: "Error Code"
         url: sub-json-api/error.html
 

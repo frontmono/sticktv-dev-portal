@@ -203,6 +203,8 @@ same as [User Login](#user-login)
 |nickname|String| user email |
 |thumbnail|String| user thumbnail. if want to resize image go to [Commoing Soon] |
 |desc|String| user description |
+|balance/purchased|String| Purchased Heart Balance. Can be use for donation |
+|balance/earned|String| Earned Heart balance. Received from donation |
 
 
 + **example**
